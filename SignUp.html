@@ -16,9 +16,23 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css">
+		<style type="text/css">
+			canvas {
+			    width: 100%;
+			    height: 100%;
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    opacity: 100;
+			    z-index: -9999;
+			}
+			</style>
+
 	</head>
 	<body>
-
+		<script type="text/javascript" src="three.js"></script>
+		<script type="text/javascript" src="java.js"></script>
+		<canvas width="360" height="594" style="width: 360px; height: 594px;"></canvas>
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
@@ -46,12 +60,12 @@
 						<div class="w3-half ">
 						
 							
-							<form class="w3-border">
+							<form id="FormSignUp" class="w3-border">
 							<br>
 							<center><h2>Obscura 3.5</h2><h5>SignUp with</h5>
 								<button type="button" class="w3-margin w3-indigo  btn btn-primary"><i class=" fa fa-facebook" style="font-size:20px;"></i> 
-								 facebook</button> <button type="button" class="w3-margin w3-red btn btn-primary"><i class=" fa fa-google-plus" style="font-size:20px;"></i>
-								Google+</button><hr style="width:70% " class="align-right"></center>
+								 facebook</button>or<button type="button" class="w3-margin w3-red btn btn-primary"><i class=" fa fa-google" style="font-size:20px;"></i>
+								Google</button><hr style="width:70% " class="align-right"></center>
 								<center>
 								<input id="inputEnter2" type="text" name="firstname" value="" class=" w3-input w3-margin" placeholder="First Name*"  />
 	    	                   	<input id="inputEnter2" type="text" name="lastname" value="" class="w3-input w3-margin" placeholder="Last Name*"  /> 

@@ -15,14 +15,24 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style type="text/css">
+			canvas {
+ 		    		width: 100%;
+ 		 	        height: 100%;
+  				    position: fixed;
+  				    top: 0;
+  				    left: 0;
+  				    opacity: 100;
+  				    z-index: -9999;
+         }
 
+		</style>
 	</head>
 	<body>
-			<script type="text/javascript" src="assets/js/three.min.js"></script>
-		<script src="three.min.js"></script>
-<script src="rendering.js"></script>
-<script src="glitchpass.js"></script>
-<script src="anime.js?"></script></script>
+		<script type="text/javascript" src="three.js"></script>
+		<script type="text/javascript" src="java.js"></script>
+		<canvas width="360" height="594" style="width: 360px; height: 594px;"></canvas>
+
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
@@ -47,16 +57,17 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<center><br>
+							<center><h1>Obscura 3.5</h1>
+							<p>	The Biggest Cryptohunt is Back Again</p>
 							<ul class="actions">
 								<li><a href="sign in.html" class="button scrolly">Let's Go</a></li>
 							</ul></center>
 						</div>
-						<center><a href="#one" class="fa fa-angle-double-down" style="font-size: 3em"></a></center>
+						<center><a href="#one" class="fa fa-angle-down" style="font-size: 3em"></a></center>
 					</section>
 
 				<!-- One -->
-					<section id="one" class="wrapper fullscreen style2 spotlights">
+					<section id="one" class="wrapper fullscreen style2 spotlights fade-up">
 						<section>
 							
 							<div class=" wrapper content">
@@ -68,7 +79,7 @@
 							</div>
 
 						</section>
-						<center><a href="#two" class="fa fa-angle-double-down" style="font-size: 3em"></a></center>
+						<center><a href="#two" class="fa fa-angle-down" style="font-size: 3em"></a></center>
 					</section>
 
 				<!-- Two -->
@@ -86,7 +97,7 @@
 
 							</div>
 							<ul class="actions">
-								<center><a href="#three" class="fa fa-angle-double-down" style="font-size: 3em"></a></center>
+								<center><a href="#three" class="fa fa-angle-down" style="font-size: 3em"></a></center>
 							</ul>
 						</div>
 						
@@ -130,7 +141,7 @@
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
+				<div class="footer-inner">
 					<ul class="menu">
 						<li>&copy;  All rights reserved.</li>
 					</ul>
