@@ -6,7 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-
+		<link rel="stylesheet" type="text/css" href="notification.css">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -25,51 +25,62 @@
 		</style>
 	</head>
 	<body>
+
 		<script type="text/javascript" src="three.js"></script>
 		<script type="text/javascript" src="java.js"></script>
 		<canvas width="360" height="594" style="width: 360px; height: 594px;"></canvas>
-
 		<!-- Sidebar -->
-			<section id="sidebar" style="max-width:250px;">
+			<section id="sidebar">
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#">Welcome dfsgdfg dsfv sdcvdsfvsdfv dbdf hdg dghdg hgfghfg </a></li>
-							<li><a href="#">About Us fdg sdg df df g</a></li>
-							<li><a href="#">Rules  dfgsdf gdsf</a></li>
-							<li><a href="#">Contact Us d gdfsg dsfgds</a></li>
-							<li><a href="#">Fourm dfg sdfg dfgd fb</a></li>
-							<li><a href="#">Welcome dfsgdfg dsfv sdcvdsfvsdfv d</a></li>
-							<li><a href="#">About Us fdg sdg df df g</a></li>
-							<li><a href="#">Rules  dfgsdf gdsf</a></li>
-							<li><a href="#">Contact Us d gdfsg dsfgds</a></li>
-							<li><a href="#">Fourm dfg sdfg dfgd fb</a></li>
-							<li><a href="#">Welcome dfsgdfg dsfv sdcvdsfvsdfv d</a></li>
-							<li><a href="#">About Us fdg sdg df df g</a></li>
-							<li><a href="#">Rules  dfgsdf gdsf</a></li>
-							<li><a href="#">Contact Us d gdfsg dsfgds</a></li>
-							<li><a href="#">Fourm dfg sdfg dfgd fb</a></li>
+							<li ><a href="#Dashboard">Dashboard</a></li>
+							<li><a href="#">Rank</a></li>
+							<li><a href="#">Logout</a></li>
+							
 
 						</ul>
 					</nav>
 				</div>
 			</section>
-
+		<center>
+			<div class="notification-bar" >
+				  <input id="hide" type="radio" name="bar" value="hide" checked="checked">
+				  <input id="show" type="radio" name="bar" value="show" >
+				   
+				  
+				  <label for="show"></label>
+				   
+				  <div class="notification-text">
+				  <div id="notification"><a href="#">Hello Bro, you can hide this notification by clicking the close button.</a></div>
+				  <div id="notification"><a href="#">Hello Bro, you can hide this notification by clicking the close button.</a></div>
+				  <div id="notification"><a href="#">Hello Bro, you can hide this notification by clicking the close button.</a></div>
+				  <div id="notification"><a href="#">Hello Bro, you can hide this notification by clicking the close button.</a></div>
+				  <div id="notification"> <a href="#">Hello Bro, you can hide this notification by clicking the close button.</a></div>
+				  
+				  </div>
+				  
+				  
+				  <label for="hide">hide</label>
+			</div> 
+		</center>	
 		<!-- Wrapper -->
 			<div id="wrapper">
-
+			
 				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen ">
+					<section id="Dashboard" class="wrapper style1 fullscreen ">
 						<div class="inner">
-							<center><h3>Obscura 3.5</h3>
-							  	<h5>	The Biggest Cryptohunt is Back Again</h5>					
-								<div style="background-color:black;border:10px;border-color="#ffffff";">
+							<center>
+							  					
+								<div style="border:10px;border-color="#ffffff"; width : 70%;">
 									
-										<p style="padding:10px;"><a href="#"><i class="fa fa-angle-left"></i></a> Level 1 <a href="#"><i class="fa fa-angle-right"></i></a></p>								
-									<img src="img/de2.jpg" style="max-width:600px;max-height:400px;"/>
+									<p style="padding:10px;"><a
+									href="#"><i class="fa fa-angle-left"></i></a> Level 1 <a href="#"><i class="fa
+									fa-angle-right"></i></a></p>
+									<img src="img/de2.jpg" style="width:50%;height:40%;"/>
 									<form style="margin:5px;display:linear;">
-										<input type="text" name="Answer" value="Answer" style="max-width:200px;">
-										<input type="submit" name="Submit" value="Submit">
+									<input type="text" name="Answer" value="Answer" style="max-width:200px;">
+									<input type="submit" name="Submit" value="Submit">
 									</form>
 
 								</center>
