@@ -14,7 +14,7 @@
   position: absolute;
   width: 100%;
    display: block;
-   z-index: 999;
+   z-index: 998;
    
 
  /* -webkit-animation: initiate 350ms ease;
@@ -48,7 +48,7 @@
   width: 24px;
   height: 24px;
   background: url('../../img/close.png') no-repeat center center;
-  z-index: 999;
+  z-index: 998;
  /* -webkit-animation: initiate 350ms ease;
   -moz-animation: initiate 350ms ease;
   -o-animation: initiate 350ms ease;
@@ -132,4 +132,26 @@
   100% {
     transform:translateY(0%);
   } 
+}
+
+/*----badge------*/
+
+.badge1 {
+   position:relative;
+   z-index: 999;
+}
+.badge1[data-badge]:after {
+   content:attr(data-badge);
+   position:absolute;
+   bottom:2px;
+   right:2px;
+   font-size:.7em;
+   background:red;
+   color:white;
+   width:18px;height:18px;
+   text-align:center;
+   line-height:18px;
+   border-radius:50%;
+   z-index: 999;
+   box-shadow:0 0 1px #333;
 }
