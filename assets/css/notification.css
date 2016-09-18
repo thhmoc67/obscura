@@ -31,13 +31,16 @@
   -o-animation: initiate 350ms ease;
   animation: initiate 350ms ease;*/
 }
-#notification1{
+#unseen{
   padding: 5px;
   background-color: #4ca9e4;
+  border: 1px solid black;
 }
-#notification2{
+
+#seen{
+  border: 1px solid black;
   padding: 5px;
-  background-color: #632579;
+  background-color: #060708;
 }
 .notification-bar input {
   display: none;
@@ -56,8 +59,8 @@
 }
 .notification-bar label[for=hide] {
   
-  right: 15px;
-  top: 11px;
+  right: 17px;
+  top: 21px;
   width: 24px;
   height: 24px;
   background: url('../../img/close.png') no-repeat center center;
@@ -72,15 +75,22 @@
   height: 50px;
   border-radius: 0px 0px 3px 3px;
   right: 10px;
+  top: 5px;
+  border-radius: 65px;
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
   float: right;
   position: fixed;
-  background: url('../../img/show.png') no-repeat center center #4baaf0;
+  background: url('../../img/notification.png') no-repeat center center #4baaf0;
 }
 
 /* Function */
 .notification-bar input[value=show]:checked ~ label[for=show],
 .notification-bar input[value=hide]:checked ~ label[for=hide],
-.notification-bar input[value=hide]:checked ~ .notification-text {
+.notification-bar input[value=hide]:checked ~ .notification-text,
+.level-bar input[value=showLevel]:checked ~ label[for=showLevel],
+.level-bar input[value=hideLevel]:checked ~ label[for=hideLevel],
+.level-bar input[value=hideLevel]:checked ~ .Level-text   {
   -webkit-transition: ease 350ms;
   -moz-transition: ease 350ms;
   -o-transition: ease 350ms;
@@ -93,7 +103,10 @@
 }
 .notification-bar input[value=hide]:checked ~ label[for=show],
 .notification-bar input[value=show]:checked ~ label[for=hide],
-.notification-bar input[value=show]:checked ~ .notification-text {
+.notification-bar input[value=show]:checked ~ .notification-text,
+.level-bar input[value=hideLevel]:checked ~ label[for=showLevel],
+.level-bar input[value=showLevel]:checked ~ label[for=hideLevel],
+.level-bar input[value=showLevel]:checked ~ .Level-text {
   -webkit-transition: ease 350ms;
   -moz-transition: ease 350ms;
   -o-transition: ease 350ms;
@@ -158,8 +171,8 @@
 .badge1[data-badge]:after {
    content:attr(data-badge);
    position:absolute;
-   bottom:2px;
-   right:2px;
+   bottom:6px;
+   right:3px;
    font-size:.7em;
    background:red;
    color:white;
@@ -205,3 +218,89 @@
     color:#ffffff;
    align-text:left;
  }
+
+
+
+
+
+
+
+/* ----------------------------- level bar ---------------------------------- */
+
+.level-bar {
+  position: fixed;
+  width: 200px;
+  height: 72%;
+  top: 0;
+  right: 68px;
+  z-index: 999;
+  overflow-y: auto;
+}
+.Level-text {
+  
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+
+  text-align: center;
+  position: absolute;
+  width: 100%;
+   display: block;
+   z-index: 998;
+   right: 0px;
+   
+   
+
+ /* -webkit-animation: initiate 350ms ease;
+  -moz-animation: initiate 350ms ease;
+  -o-animation: initiate 350ms ease;
+  animation: initiate 350ms ease;*/
+}
+#levels{
+  padding: 5px;
+  background-color: #060708;
+  border: 1px solid black ;
+}
+
+.level-bar input {
+  display: none;
+
+}
+.level-bar label {
+  cursor: pointer;
+  color: #fff;
+  position: fixed;
+  z-index: 5;
+  display: inline-block;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.level-bar label[for=hideLevel] {
+  
+  right: 95px;
+  top: 21px;
+  width: 24px;
+  height: 24px;
+  background: url('../../img/close.png') no-repeat center center;
+  z-index: 998;
+ /* -webkit-animation: initiate 350ms ease;
+  -moz-animation: initiate 350ms ease;
+  -o-animation: initiate 350ms ease;
+  animation: initiate 350ms ease;*/
+}
+.level-bar label[for=showLevel] {
+  max-width: 45px;
+  height: 50px;
+  border-radius: 0px 0px 3px 3px;
+  right: 70px;
+  top: 5px;
+  border-radius: 65px;
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+  float: right;
+  position: fixed;
+  background: url('../../img/show level.png') no-repeat center center #4baaf0;
+  
+}
