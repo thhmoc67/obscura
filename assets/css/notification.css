@@ -1,10 +1,10 @@
 
 .notification-bar {
   position: fixed;
-  width: 350px;
-  height: 72%;
+  width: 275px;
+  height: 55%;
   top: 0;
-  right: 0px;
+  right: 115px;
   z-index: 999;
   overflow-y: auto;
   
@@ -59,7 +59,7 @@
 }
 .notification-bar label[for=hide] {
   
-  right: 17px;
+  right: 132px;
   top: 21px;
   width: 24px;
   height: 24px;
@@ -74,7 +74,7 @@
   width: 45px;
   height: 50px;
   border-radius: 0px 0px 3px 3px;
-  right: 10px;
+  right: 120px;
   top: 5px;
   border-radius: 65px;
    -moz-border-radius: 70px; 
@@ -304,3 +304,23 @@
   background: url('../../img/show level.png') no-repeat center center #4baaf0;
   
 }
+
+
+/*--------------------Levels -----*/
+#selectLevel{
+  width: 100px;
+  float: right;
+  position: fixed;
+  right: 8px;
+  top: 5px;
+  z-index: 998;
+  color: #ffffff;
+  margin: 5px;
+  height: 45px;
+}
+#selectLevel option {
+    background-color: grey;
+    border:1px solid black;
+    padding: 15px;
+    height: 62%;
+  }
