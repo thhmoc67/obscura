@@ -1632,7 +1632,10 @@
 
 /* Type */
 
-	body, input, select, textarea {
+	body, input, 
+
+
+	select, textarea {
 		color: rgba(255, 255, 255, 0.55);
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
@@ -3248,9 +3251,7 @@
 		.wrapper.style2-alt {
 			background-color: #3e4094;
 		}
-html{
-	
-}
+
 		.wrapper.style3 {
 			background-color: #b74e91;
 		}
@@ -3372,7 +3373,7 @@ html{
 		cursor: default;
 		padding: 1.75em 2em;
 	}
-			background-color: #7fffa6;
+			/*background-color: #7fffa6;*/
 
 		#header > .title {
 			border: 0;
@@ -3483,6 +3484,7 @@ html{
 			}
 
 		}
+
 
 	#header + #wrapper > .wrapper > .inner {
 		margin: 0 auto;
@@ -3863,6 +3865,13 @@ html{
 		}
 
 		@media screen and (max-width: 736px) {
+
+			#sidebar {
+				display: none;
+			}
+
+		}
+		@media screen and (max-width: 411px) {
 
 			#sidebar {
 				display: none;

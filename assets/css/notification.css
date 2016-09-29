@@ -59,7 +59,7 @@
 }
 .notification-bar label[for=hide] {
   
-  right: 132px;
+  right: 137px;
   top: 21px;
   width: 24px;
   height: 24px;
@@ -209,19 +209,35 @@
 
 #mainBox{
   border:10px;
-  border-color="#ffffff";
+  border-color: #ffffff;
   max-width: 600px;
 }
 
 #lvl1{
     font-size: 25px;
     color:#ffffff;
-   align-text:left;
+    align-content:left;
  }
 
+/*------------------------*/
+#note::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #000000;
+}
 
+#note::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #000000
+  border:1px solid #ffffff;
+}
 
+#note::-webkit-scrollbar-thumb
+{
+  background-color:#F5F5F5 ;
 
+}
 
 
 
@@ -314,13 +330,156 @@
   right: 8px;
   top: 5px;
   z-index: 998;
-  color: #ffffff;
+
   margin: 5px;
   height: 45px;
 }
 #selectLevel option {
-    background-color: grey;
+    
     border:1px solid black;
     padding: 15px;
     height: 62%;
   }
+  .select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+/*
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  width: 220px;
+  height: 40px;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #c0392b;
+  padding: 8px 15px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+}
+.select-styled:hover {
+  background-color: #b83729;
+}
+.select-styled:active, .select-styled.active {
+  background-color: #ab3326;
+}
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #ab3326;
+}
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  border-top: 1px solid #962d22;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.select-options li:hover {
+  color: #c0392b;
+  background: #fff;
+}
+.select-options li[rel="hide"] {
+  display: none;
+}
+*/
+/*
+ *  STYLE 3
+ */
+
+.scrollbar
+{
+  margin-left: 30px;
+  float: right;
+  background: #F5F5F5;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+} 
+/*
+.force-overflow
+{
+  min-height: 450px;
+}*/
+
+#selectLevel::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+#selectLevel::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+#selectLevel::-webkit-scrollbar-thumb
+{
+  background-color: #000000;*/
+}
+select {
+    -webkit-border-radius:25px;
+     -moz-border-radius:25px; 
+     border-radius:25px;
+}
+
+select:hover {    
+    background-color:#4baaf0;
+    color : #ffffff;
+}
+
+option:hover {
+    background-color:yellow;
+}
+
+option {
+    -webkit-border-radius:25px; -moz-border-radius:25px; border-radius:25px;
+    color:blue;
+    background-color:yellow;
+}/*
+body {
+  scrollbar-face-color: #000000;
+  scrollbar-shadow-color: #2D2C4D;
+  scrollbar-highlight-color:#7D7E94;
+  scrollbar-3dlight-color: #7D7E94;
+  scrollbar-darkshadow-color: #2D2C4D;
+  scrollbar-track-color: #7D7E94;
+  scrollbar-arrow-color: #C1C1D1; 
+}*/
